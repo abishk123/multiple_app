@@ -18,11 +18,18 @@ from django.contrib import admin
 from django.urls import path
 from csk.views import *
 from mi.views import *
+from srh.views import *
+from rcb.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('captain/',captain,name='captain'),
+    path('ruturaj/',ruturaj,name='ruturaj'),
     path('cskteam/',cskteam,name='cskteam'),
-    path('captain/',captain,name='captain'),
+    path('hardik/',hardik,name='hardik'),
     path('miteam/',miteam,name='miteam'),
+    path('pat/',pat,name='pat'),
+    path('srhteam/',srhteam,name='srhteam'),
+    path('virat/',virat,name='virat'),
+    path('rcbteam/',rcbteam,name='rcbteam'),
+
 ]
